@@ -5,7 +5,7 @@ import { UserService } from './user.service'
 import { AuthGuard } from '@nestjs/passport'
 
 @Controller('user')
-export class UsersController {
+export class UserController {
   constructor(private readonly usersService: UserService) {}
 
   @Get(':id')
